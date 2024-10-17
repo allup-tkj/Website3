@@ -1,0 +1,472 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+:root {
+    --main-color: #BF00FF;
+    --second-color: #424242;
+}
+.heading{
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+.heading span{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--second-color);
+}
+.heading h1{
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+/*navbar*/
+.navbar {
+    background-color: #b4c6f6;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between; /* Membuat jarak antara elemen kiri dan kanan */
+    align-items: center; /* Menyamakan tinggi elemen kiri dan kanan */
+    padding: 20px 20px; /* Menambahkan padding agar tidak terlalu rapat */
+    width: auto;
+}
+
+.brand {
+    font-family: monospace;
+    font-size: 20px;
+    color: rgb(173, 28, 235);
+    padding-left: 20px;
+}
+
+.lastname {
+    color: rgb(154, 53, 255);
+}
+
+.navbar-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-family: monospace;
+}
+
+.navbar-item {
+    margin: 0 10px; /* Jarak antara setiap item */
+    background-color: #BF00FF;
+    border-radius: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+}
+
+.navbar-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px; /* Ukuran font yang lebih kecil agar lebih sesuai */
+    padding: 14px 16px;
+
+}
+
+.navbar-item a:hover {
+    background-color: #BC35FF;
+}
+
+
+/*tentang kami*/
+.allup {
+    display: flex;
+    margin-top: 2rem;
+    margin: 0;
+    align-items: center;
+    background: #b4c6f6;
+    flex-wrap: wrap;
+}
+.logo{
+    flex: 1 1 21rem;
+    padding-left: 150px;
+}
+.text{
+    font-family: monospace;
+    flex: 1 1 21rem;
+    text-align: center;
+    padding-right: 200px;
+    padding-left: 20px;
+    font-size: 25px;
+}
+/*produk kami*/
+.row {
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.small-container {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.small-container .title {
+    text-align: center;
+    margin: 0 auto 20px;
+    position: relative;
+    line-height: 60px;
+    color: var(--dark);
+}
+
+.small-container .title::after {
+    content: "";
+    background: var(--blue);
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.col-2 p a {
+    text-decoration: none;
+    color: var(--dark);
+}
+
+.col-4 {
+    border: 1px solid var(--white2);
+    background: var(--white);
+    flex-basis: 21%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+
+.col-4 img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.col-4 p {
+    margin: 0 15px;
+    font-size: 14px;
+}
+
+.col-4:hover {
+    transform: scale(1.1);
+}
+
+
+.price-container {
+    text-align: center;
+}
+
+.p-1 {
+    color: var(--dark);
+}
+
+.p-2 {
+    color: var(--red);
+}
+
+.rating {
+    margin-top: -15px;
+    text-align: center;
+}
+
+.rating .fas {
+    color: var(--orange);
+}
+
+.rating .far {
+    color: var(--orange);
+}
+
+.title-prod {
+    font-size: 0.9 rem;
+    text-align: center;
+    color: var(--dark);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/*delivery*/
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin: 50px;
+    align-items: center;
+}
+.btn {
+    padding: 7px 16px;
+    border: 2px solid var(--second-color);
+    border-radius: 40px;
+    color: var(--second-color);
+    font-weight: 500;
+}
+
+.btn:hover {
+    color: #ffff;
+    background: var(--main-color);
+}
+.delivery-img, .app-img {
+    flex: 1 1 21rem;
+}
+.delivery-text, .app-text {
+    flex: 1 1 21rem;
+}
+.delivery-text h2, .app-text h2 {
+    font-size: 1.2rem;
+    color: var(--second-color);
+}
+
+/*tentang layanan*/
+.tentang {
+    display: flex;
+    flex-wrap: wrap;
+    background: #b4c6f6;
+    gap: 1.5rem;
+}
+.tentang-img {
+    flex: 1 1 17rem;
+}
+.tentang-text {
+    flex: 1 1 17rem;
+    padding-top: 40px;
+} 
+.tentang-text h2 {
+    font-size: 1.2rem;
+    color: var(--second-color);
+}
+
+/*footer*/
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+.footer {
+    position: fixed;
+    bottom: 0;
+}
+.footer-distributed {
+    background-color: #9000D6;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+   }
+@media (max-height:"800px")
+{
+    footer{
+        position: static;
+    }
+    header{
+        padding-top: 40px;
+    }
+}
+/*footer left*/
+.footer-distributed .footer-left img {
+    width: 25%;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-left .credit-cards {
+    width: 100%;
+    padding-top: 20px;
+}
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+   .footer-distributed .footer-left {
+    width: 30%;
+    }
+
+   .footer-distributed .footer-company-name{
+    color: #2d2a30;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+   }
+   .footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+    }
+    .footer-distributed h3 span {
+        color: #e0ac1c;
+    }
+    /*footer link*/
+    .footer-distributed .footer-links {
+        color: #ffffff;
+        margin: 20px 0 12px;
+    }
+    .footer-distributed .footer-links a {
+        display: inline-block;
+        line-height: 1.8;
+        text-decoration: none;
+        color: inherit;
+    }
+    .footer-distributed .footer-company-name {
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+    }
+    /*footer center*/
+    .footer-distributed .footer-center {
+        width: 35%;
+    }
+    
+    .footer-distributed .footer-center i {
+        background-color: #BC35FF;
+        color: #ffffff;
+        font-size: 25px;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 42px;
+        margin: 10px 15px;
+        vertical-align: middle;
+    }
+    
+    .footer-distributed .footer-center i.fa-envelope {
+        font-size: 17px;
+        line-height: 38px;
+    }
+    
+    .footer-distributed .footer-center p {
+        display: inline-block;
+        color: #ffffff;
+        vertical-align: middle;
+        margin: 0;
+    }
+    
+    .footer-distributed .footer-center p span {
+        display: block;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 2;
+    }
+    
+    .footer-distributed .footer-center p a {
+        color: #e0ac1c;
+        text-decoration: none;
+        ;
+    }
+    
+   
+   /*footer right*/
+   .footer-distributed .footer-right {
+    width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #BC35FF;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.footer-distributed .footer-icons a:hover {
+    background-color: #3F71EA;
+}
+
+.footer-links a:hover {
+    color: #3F71EA;
+}
+
+@media (max-width: 880px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+}       
+/*video iklan*/
+h1 {
+    color: black;
+    text-align: center;
+    text-decoration: oklch(lightness chroma hue);
+    padding-top: 50px;
+}
+video {
+    display:block;
+    margin: auto; 
+    width: 900px; 
+    height: 500px;
+    margin-bottom: 60px;
+}
+.tentang-video{
+    text-align: center;
+    margin-left: 160px;
+}
+.tentang-video p{
+    text-align: center;
+    margin-left: 290px;
+}
+.tentang-video h2{
+    text-align: center;
+    margin-left: 280px;
+    font-size: 1.2rem;
+    color: rgb(51, 51, 51);
+}

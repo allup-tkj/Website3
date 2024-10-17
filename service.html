@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="order.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h2>Form Order Jasa Pemeliharaan <br>dan Service Komputer</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="29801163-a651-44ad-bf40-a06475c0e871">
+
+            <input type="text" name="nama" placeholder="Nama" class="contact-inputs" required>
+            <input type="text" name="kelas" placeholder="Kelas" class="contact-inputs" required>
+            <input type="number" name="Nomor WA" placeholder="Nomor WA Kamu" class="contact-inputs" required>
+            
+            <div class="custom-select">
+                <select name="pesanan" id="">
+                    <option value="">pilih pesanan kamu</option>
+                    <option value="Jasa Pembersihan pc/laptop">Jasa Pembersihan pc/laptop</option>
+                    <option value="Jasa Service pc/laptop">Jasa Service pc/laptop</option>
+                </select>
+            </div>
+            <textarea name="keluhan pc/laptop" placeholder="Tuliskan keluhan pc/laptop kamu" class="contact-inputs" required></textarea>
+
+            <div class="custom-select">
+                <select name="pembayaran" id="">
+                    <option value="">pilih metode pembayaran</option>
+                    <option value="cash/tunai">Cash/Tunai</option>
+                    <option value="dana">Dana</option>
+                    <option value="gopay">Gopay</option>
+                    <option value="OVO">OVO</option>
+                    <option value="shopee pay">Shopee pay</option>
+                    <option value="transfer bank">Transfer Bank</option>
+                </select>
+            </div>
+            <button type="submit">Submit <img src="img/arrow_icon.png" alt=""></button>
+        </form>
+        <div class="contact-right">
+            <img src="img/right_img.png" alt="">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
